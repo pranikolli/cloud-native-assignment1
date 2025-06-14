@@ -23,7 +23,7 @@ def listcontents():
         contents = os.listdir(hostfolder)
         return "<br>".join(contents)
     except Exception as e:
-        return "Error description: "+ str(e)
+        return "Error description: " + str(e)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5001) # Change port to 5001
