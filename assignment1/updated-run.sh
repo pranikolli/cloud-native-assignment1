@@ -8,5 +8,6 @@
 # And don't forget to make the updated-run.sh script executable (chmod +x updated-run.sh)
 
 
-docker run -p 5002:5001 -d prk546-assignment1:latest
+#docker run -p 5002:5001 -d prk546-assignment1:latest -v $(pwd):/hostfolder
 
+docker run -p 5001:5001 -v "$(pwd)":/hostfolder -e GREETING="Spring was earlier." -d prk546-assignment1:latest
